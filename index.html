@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Merit Mirage | The Hidden Toll of Student Pressure & Job Reality</title>
+  <meta name="description" content="An investigation into the psychological crisis, job market friction, and unspoken weight carried by millions of college students across India.">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Light Theme Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Minimalist Clean Navigation -->
+  <header class="navbar" id="top-nav">
+    <div class="nav-container">
+      <a href="#hero" class="brand-link">
+        <span class="brand-mark"></span>
+        <span class="brand-name">The Merit Mirage</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#two-worlds">The Contrast</a>
+        <a href="#academic-toll">Structural Flaws</a>
+        <a href="#disciplines">Disciplines</a>
+        <a href="#pressure-gauge">Pressure Index</a>
+        <a href="#family-debt">Family & Debt</a>
+        <a href="#unsent-letters">Unsent Letters</a>
+        <a href="#solidarity">Solidarity</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 1. Hero Section: 2-Column with Prominent Right-Side Image & Sleek Quote -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <!-- Left Column: Narrative & Stats -->
+      <div class="hero-text-col">
+        <div class="category-pill">
+          <i class="fa-solid fa-circle-exclamation"></i> Ground Realities in Indian Higher Education
+        </div>
+        
+        <h1 class="hero-title">
+          They taught us to measure dignity in annual compensation.<br>
+          <span class="editorial-em">They never prepared us for the silence in between.</span>
+        </h1>
+        
+        <p class="hero-summary">
+          Beyond the celebratory photographs and campus prospectuses lies a generation suffocating in quiet desperation—trapped between parental sacrifice, institutional obsolescence, and an unyielding corporate threshold.
+        </p>
+
+        <!-- Compact Key Indicators -->
+        <div class="hero-stats-row">
+          <div class="mini-stat">
+            <div class="stat-number count-up" data-target="70">0</div><span class="stat-symbol">%</span>
+            <div class="stat-caption">Severe Psychological Distress</div>
+          </div>
+          
+          <div class="mini-stat">
+            <div class="stat-number count-up" data-target="18">0</div><span class="stat-symbol"> Mo</span>
+            <div class="stat-caption">Average Delayed Onboarding</div>
+          </div>
+          
+          <div class="mini-stat">
+            <div class="stat-number count-up" data-target="30">0</div><span class="stat-symbol">%+</span>
+            <div class="stat-caption">Unplaced Rate in Premier IITs</div>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#two-worlds" class="btn btn-dark">
+            <span>Explore The Experience</span>
+            <i class="fa-solid fa-arrow-down-long"></i>
+          </a>
+          <a href="#pressure-gauge" class="btn btn-subtle">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>Simulate Student Strain</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Prominent Visual (480px) with Sleek Miniature Floating Quote -->
+      <div class="hero-visual-col">
+        <div class="hero-image-frame">
+          <img src="assets/images/exam-overload.jpg" alt="Indian student overwhelmed between competitive exam book towers" class="hero-main-img">
+          <div class="floating-quote-card">
+            <i class="fa-solid fa-quote-left quote-mini-icon"></i>
+            <span class="quote-text">Sixteen years chasing marks, only to discover our youth was bartered for entry-level silence.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. The Two Worlds: Curated Male Graduate Profile vs 3 AM Reality (Wider & Taller 480px) -->
+  <section class="section-container" id="two-worlds">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Visual Dichotomy</span>
+        <h2 class="main-heading">The Curated Facade vs. The 3:00 AM Reality</h2>
+        <p class="sub-lead">Slide across to inspect the gulf between public corporate posture and late-night private exhaustion.</p>
+      </div>
+
+      <div class="split-slider-box" id="slider-wrapper">
+        <!-- Background Layer: The 3 AM Reality -->
+        <div class="split-layer split-reality">
+          <img src="assets/images/midnight-student.jpg" alt="Indian student studying late at night in hostel room" class="layer-img">
+          <div class="layer-overlay reality-overlay">
+            <div class="layer-badge badge-crimson">The 3:00 AM Truth</div>
+            <h3>The Unseen Exhaustion</h3>
+            <p class="layer-desc">40 open tabs, automated rejection notices, unpaid contracts, and the dread of calling home.</p>
+          </div>
+        </div>
+
+        <!-- Foreground Layer: The Curated Male Graduate Facade -->
+        <div class="split-layer split-facade" id="split-facade">
+          <img src="assets/images/graduate-facade.jpg" alt="Smiling Indian male graduate on convocation day" class="layer-img">
+          <div class="layer-overlay facade-overlay">
+            <div class="layer-badge badge-blue">What Society Sees</div>
+            <h3>The Public Milestone</h3>
+            <p class="layer-desc">"Thrilled to announce my graduation." Ceremonial stole, confident smile, and proud congratulations.</p>
+          </div>
+        </div>
+
+        <!-- Draggable Handle -->
+        <div class="slider-handle" id="split-handle">
+          <div class="handle-bar"></div>
+          <div class="handle-disc">
+            <i class="fa-solid fa-left-right"></i>
+          </div>
+          <div class="handle-bar"></div>
+        </div>
+      </div>
+      <p class="handle-tip"><i class="fa-solid fa-arrows-left-right"></i> Drag the divider to compare both dimensions</p>
+    </div>
+  </section>
+
+  <!-- 3. Academic Toll, Hallway Despair & Systemic Failures (Integrated 21K School Insights) -->
+  <section class="section-container bg-tinted" id="academic-toll">
+    <div class="container">
+      <div class="visual-text-grid">
+        <div class="img-frame-wrap">
+          <img src="assets/images/corridor-exhaustion.jpg" alt="Exhausted student sitting alone in college hallway" class="showcase-img">
+          <div class="caption-card">
+            <span class="caption-meta">Institutional Stagnation</span>
+            <p class="caption-quote">"Compulsory 75% attendance for 2010 notes, while the market rejects us for lacking 2026 skills."</p>
+          </div>
+        </div>
+
+        <div class="text-content-wrap">
+          <span class="section-tag">The Structural Conflict</span>
+          <h2 class="main-heading">The Double-Shift Paradox: College vs. Competence</h2>
+          
+          <p class="prose-text">
+            Students endure a gruelling dual timetable: morning classroom attendance enforcing outdated theoretical rote memorization under penalty of debarment, followed by midnight hours teaching themselves modern tooling from internet tutorials.
+          </p>
+
+          <div class="mini-data-strip">
+            <div class="data-block">
+              <div class="data-val">75%</div>
+              <div class="data-key">Compulsory Attendance Rule</div>
+            </div>
+            <div class="data-block">
+              <div class="data-val">48%</div>
+              <div class="data-key">Categorized Unemployable</div>
+            </div>
+            <div class="data-block">
+              <div class="data-val">5 hrs</div>
+              <div class="data-key">Average Final Year Sleep</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Enhanced Systemic Structural Gaps (Modified Cards with Stat Badges & Takeaways) -->
+      <div class="systemic-grid">
+        <div class="systemic-card card-crimson-accent">
+          <div class="card-stat-header">
+            <span class="systemic-icon icon-crimson"><i class="fa-solid fa-book-skull"></i></span>
+            <span class="card-stat-badge badge-crimson">72% Stagnant Syllabi</span>
+          </div>
+          <h4>Curricular Obsolescence</h4>
+          <p>University curricula lag more than a decade behind industry realities, forcing students to cram outdated theoretical models that are obsolete on day one in the job market.</p>
+          <div class="card-takeaway">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>10+ year curriculum revision gap across universities</span>
+          </div>
+        </div>
+
+        <div class="systemic-card card-amber-accent">
+          <div class="card-stat-header">
+            <span class="systemic-icon icon-amber"><i class="fa-solid fa-building-columns"></i></span>
+            <span class="card-stat-badge badge-amber">60%+ Private Mills</span>
+          </div>
+          <h4>The "Degree Mill" Economy</h4>
+          <p>Unregulated commercial institutions charging steep tuition fees while lacking functional laboratories, full-time research professors, or meaningful corporate placement pipelines.</p>
+          <div class="card-takeaway">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>High debt burden with near-zero placement assurance</span>
+          </div>
+        </div>
+
+        <div class="systemic-card card-indigo-accent">
+          <div class="card-stat-header">
+            <span class="systemic-icon icon-indigo"><i class="fa-solid fa-flask-vial"></i></span>
+            <span class="card-stat-badge badge-blue">&lt; 3% Global Research</span>
+          </div>
+          <h4>The Innovation Deficit</h4>
+          <p>Depleted research funding and absence of mentorship pushes ambitious minds away from genuine innovation and into multi-year repetitive government coaching traps.</p>
+          <div class="card-takeaway">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <span>0.15% acceptance threshold creates immense psychological toll</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Beyond B.Tech: Multi-Discipline Reality Matrix -->
+  <section class="section-container" id="disciplines">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Cross-Disciplinary Analysis</span>
+        <h2 class="main-heading">Four Academic Paths, One Shared Agony</h2>
+        <p class="sub-lead">The illusion of security has broken across every academic branch. Select any discipline to inspect its obstacles.</p>
+      </div>
+
+      <!-- Compact Discipline Tabs -->
+      <div class="discipline-nav">
+        <button class="discipline-btn active" data-stream="engineering">
+          <i class="fa-solid fa-code"></i> Technology & Engineering
+        </button>
+        <button class="discipline-btn" data-stream="commerce">
+          <i class="fa-solid fa-chart-pie"></i> Commerce & CA
+        </button>
+        <button class="discipline-btn" data-stream="humanities">
+          <i class="fa-solid fa-feather"></i> Humanities & Arts
+        </button>
+        <button class="discipline-btn" data-stream="sciences">
+          <i class="fa-solid fa-atom"></i> Pure Sciences
+        </button>
+      </div>
+
+      <!-- Dynamic Discipline Card (Rendered via JS) -->
+      <div class="discipline-content-box" id="discipline-box"></div>
+    </div>
+  </section>
+
+  <!-- 5. Cumulative Pressure Simulator (Integrated with Chalkboard Stress Image) -->
+  <section class="section-container bg-tinted" id="pressure-gauge">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Interactive Simulation</span>
+        <h2 class="main-heading">The Cumulative Stress Index</h2>
+        <p class="sub-lead">Adjust the indicators below to observe how composite socio-economic pressures precipitate cognitive collapse.</p>
+      </div>
+
+      <!-- 3-Column Integrated Layout: Chalkboard Visual + Controls + Live Meter -->
+      <div class="gauge-integrated-layout">
+        <!-- Visual Column: User's Chalkboard Stress Image -->
+        <div class="gauge-visual-frame">
+          <img src="assets/images/chalkboard-stress.jpg" alt="Student overwhelmed by student loans, attendance, placements, and exam pressure" class="gauge-chalkboard-img">
+          <div class="gauge-img-badge">
+            <i class="fa-solid fa-arrows-to-dot"></i>
+            <span>The Composite Convergence of Pressures</span>
+          </div>
+        </div>
+
+        <!-- Sliders Controls Panel -->
+        <div class="gauge-controls-box">
+          <div class="box-head">
+            <h3>Stress Triggers</h3>
+            <span class="param-tip">Calibrated to 2025–2026 data</span>
+          </div>
+
+          <div class="slider-field">
+            <div class="slider-info">
+              <label for="sl-attendance"><i class="fa-solid fa-clock"></i> Mandatory Attendance</label>
+              <span class="field-val" id="disp-attendance">75%</span>
+            </div>
+            <input type="range" id="sl-attendance" min="50" max="95" value="75" class="range-slider">
+          </div>
+
+          <div class="slider-field">
+            <div class="slider-info">
+              <label for="sl-rejections"><i class="fa-solid fa-inbox"></i> Ghosted Applications</label>
+              <span class="field-val" id="disp-rejections">150</span>
+            </div>
+            <input type="range" id="sl-rejections" min="10" max="500" value="150" class="range-slider">
+          </div>
+
+          <div class="slider-field">
+            <div class="slider-info">
+              <label for="sl-debt"><i class="fa-solid fa-receipt"></i> Loan & Debt Clock</label>
+              <span class="field-val" id="disp-debt">High</span>
+            </div>
+            <input type="range" id="sl-debt" min="1" max="4" value="3" class="range-slider">
+          </div>
+
+          <div class="slider-field">
+            <div class="slider-info">
+              <label for="sl-social"><i class="fa-solid fa-users-viewfinder"></i> Digital Peer Pressure</label>
+              <span class="field-val" id="disp-social">Frequent</span>
+            </div>
+            <input type="range" id="sl-social" min="1" max="4" value="3" class="range-slider">
+          </div>
+        </div>
+
+        <!-- Meter Status Panel -->
+        <div class="gauge-metrics-box">
+          <div class="battery-meter-wrap">
+            <div class="meter-head">
+              <span class="meter-title">Resilience Reserve</span>
+              <span class="meter-number" id="battery-num">28%</span>
+            </div>
+            <div class="meter-bar-track">
+              <div class="meter-bar-fill" id="battery-fill"></div>
+            </div>
+            <div class="meter-status-text" id="battery-status">Acute Exhaustion State</div>
+          </div>
+
+          <!-- Live Thought Container -->
+          <div class="live-thought-container">
+            <div class="heartbeat-pulse-badge">
+              <i class="fa-solid fa-heart-pulse heart-pulse-anim" id="heart-icon"></i>
+              <span id="bpm-display">Estimated Pulse: 112 BPM (Tension Spike)</span>
+            </div>
+            <div class="thought-prose-wrap">
+              <p class="thought-prose" id="live-thought">
+                "Another company rejected my application citing a lack of three years' professional experience. Where was I supposed to purchase those years?"
+              </p>
+            </div>
+          </div>
+
+          <div class="clinical-assessment" id="assessment-verdict">
+            <strong>Observation:</strong> Severe burnout trajectory. Psychological isolation exceeds safe thresholds.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Parental Sacrifice: The Debt Clock -->
+  <section class="section-container" id="family-debt">
+    <div class="container visual-text-grid">
+      <div class="text-content-wrap">
+        <span class="section-tag">Family Obligation</span>
+        <h2 class="main-heading">The Weight of a Father’s Compromise</h2>
+
+        <blockquote class="deep-editorial-quote">
+          "The most terrifying conversation is not the corporate interview. It is the muted question across the kitchen table: <br>
+          <em>'Did anyone call back today?'</em>—and the quiet shame of having to look away."
+        </blockquote>
+
+        <p class="prose-text">
+          In middle-class Indian households, a university education is a collective family gamble. The six-month moratorium on educational loans does not pause for hiring freezes. Every month of unemployment becomes a silent financial burden on aging parents.
+        </p>
+
+        <div class="quote-signature-box">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <strong>The 180-Day Moratorium Clock</strong>
+            <span>Grace periods expire precisely 6 months after convocation regardless of market conditions.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="img-frame-wrap">
+        <img src="assets/images/father-sacrifice.jpg" alt="Indian father inspecting loan passbook and calculation sheet" class="showcase-img">
+        <div class="caption-card">
+          <span class="caption-meta">Generational Guilt</span>
+          <p class="caption-quote">"The heaviest luggage carried into the exam hall is not textbooks; it is a father’s silent sacrifice."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Gender & Independence: The Dual Countdown -->
+  <section class="section-container bg-tinted" id="gender-dimension">
+    <div class="container visual-text-grid">
+      <div class="img-frame-wrap">
+        <img src="assets/images/female-pressure.jpg" alt="Indian female student studying late night under study lamp" class="showcase-img">
+        <div class="caption-card">
+          <span class="caption-meta">The Autonomy Deadline</span>
+          <p class="caption-quote">"An unreceived job offer is not merely a delayed career; it is the immediate revival of matrimonial ultimatums."</p>
+        </div>
+      </div>
+
+      <div class="text-content-wrap">
+        <span class="section-tag">Autonomy Under Siege</span>
+        <h2 class="main-heading">The Dual Countdown: Financial Autonomy vs. Marriage Ultimatums</h2>
+
+        <blockquote class="deep-editorial-quote">
+          "My struggle was never only against the entrance syllabus. It was against the calendar. Every passing month tightened the circle around my right to decide my own life."
+        </blockquote>
+
+        <p class="prose-text">
+          While male graduates often receive leeway to navigate trial and error, female graduates operate under an unforgiving conditional ultimatum: secure independent employment before convocation, or surrender self-determination to arranged matrimonial matchmaking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Collective Grief: The Circle of Camaraderie -->
+  <section class="section-container" id="circle-grief">
+    <div class="container visual-text-grid">
+      <div class="text-content-wrap">
+        <span class="section-tag">Shared Humanity</span>
+        <h2 class="main-heading">The Broken Circle: Mourning Together in Crowded Hostels</h2>
+
+        <blockquote class="deep-editorial-quote">
+          "We laugh together in the canteen at noon, and we weep behind closed doors at night. Because admitting terror to your peers feels like confessing defeat before the race has finished."
+        </blockquote>
+
+        <p class="prose-text">
+          Campus culture forces friends who share meals and clothes into direct competition for the same two corporate vacancies. Yet, the only shelter students find is in one another—silent embraces in corridors and the reassurance that they are not broken.
+        </p>
+      </div>
+
+      <div class="img-frame-wrap">
+        <img src="assets/images/friends-consoling.jpg" alt="Group of Indian college students comforting a weeping friend" class="showcase-img">
+        <div class="caption-card">
+          <span class="caption-meta">The Sanctuary of Friendship</span>
+          <p class="caption-quote">"In a system that treats young humans as disposable labor inputs, the only dignity left is how we hold each other up."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Unsent Letters to Parents -->
+  <section class="section-container bg-tinted" id="unsent-letters">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Private Confessions</span>
+        <h2 class="main-heading">The Letters That Were Never Mailed</h2>
+        <p class="sub-lead">Unedited fragments from private notebooks and unsent messages from students across Indian universities.</p>
+      </div>
+
+      <div class="letters-triple-grid">
+        <!-- Letter 1 -->
+        <div class="letter-parchment">
+          <div class="letter-top">
+            <span class="letter-recipient">To: My Father</span>
+            <span class="letter-badge">Fourth Year Engineering</span>
+          </div>
+          <div class="letter-snippet">
+            <p>"You sold the family scooter to pay my examination penalty. You told me you would walk to work because an education was worth any sacrifice.</p>
+            <p>I spend six hours nightly transmitting applications. The market simply refuses to answer. Forgive me if I fail to make you proud."</p>
+          </div>
+          <div class="letter-foot">
+            <span class="letter-timestamp">3:18 AM</span>
+            <button class="open-letter-btn" onclick="app.openModal(1)"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Full Text</button>
+          </div>
+        </div>
+
+        <!-- Letter 2 -->
+        <div class="letter-parchment">
+          <div class="letter-top">
+            <span class="letter-recipient">To: My Mother</span>
+            <span class="letter-badge">CA Final Candidate</span>
+          </div>
+          <div class="letter-snippet">
+            <p>"Whenever you call and ask gently if I have eaten, my throat tightens. I have lived inside this ten-foot room for two years.</p>
+            <p>Mother, tell me that if my next examination attempt collapses as well, you will still look at me with tenderness."</p>
+          </div>
+          <div class="letter-foot">
+            <span class="letter-timestamp">2:45 AM</span>
+            <button class="open-letter-btn" onclick="app.openModal(2)"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Full Text</button>
+          </div>
+        </div>
+
+        <!-- Letter 3 -->
+        <div class="letter-parchment">
+          <div class="letter-top">
+            <span class="letter-recipient">To: Society & Panels</span>
+            <span class="letter-badge">Liberal Arts Graduate</span>
+          </div>
+          <div class="letter-snippet">
+            <p>"You advised us to pursue curiosity. When we enrolled in literature and design, you branded us unemployable and demanded three years experience for unpaid internships.</p>
+            <p>We are willing to labor fourteen hours daily; all we demand is to be treated as humans rather than discarded rows on a candidate dashboard."</p>
+          </div>
+          <div class="letter-foot">
+            <span class="letter-timestamp">4:12 AM</span>
+            <button class="open-letter-btn" onclick="app.openModal(3)"><i class="fa-solid fa-arrow-up-right-from-square"></i> Read Full Text</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Wall of Solidarity -->
+  <section class="section-container" id="solidarity">
+    <div class="container">
+      <div class="section-title-wrap">
+        <span class="section-tag">Shared Voice</span>
+        <h2 class="main-heading">The Wall of Solidarity</h2>
+        <p class="sub-lead">Leave an anonymous word of strength, an unvarnished confession, or a message of hope for someone studying alone tonight.</p>
+      </div>
+
+      <!-- Compact Post Form -->
+      <div class="solidarity-post-card">
+        <form id="note-form">
+          <div class="form-inputs-line">
+            <input type="text" id="note-author" placeholder="Your Pseudonym / Graduation Year" required maxlength="40">
+            <select id="note-stream" required>
+              <option value="Technology">Technology & Engineering</option>
+              <option value="Commerce">Commerce & CA</option>
+              <option value="Humanities">Humanities & Arts</option>
+              <option value="Sciences">Sciences & Research</option>
+              <option value="Alumni">Graduate / Professional</option>
+            </select>
+          </div>
+          <textarea id="note-message" placeholder="Write your words of solace or truth... (Max 280 characters)" maxlength="280" required></textarea>
+          <div class="post-actions-row">
+            <span id="char-remaining" class="char-notice">280 characters left</span>
+            <button type="submit" class="btn btn-dark btn-sm"><i class="fa-solid fa-paper-plane"></i> Publish Note</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Notes Grid -->
+      <div class="notes-flow-grid" id="notes-grid"></div>
+    </div>
+  </section>
+
+  <!-- 11. Closing Memorial Footer -->
+  <footer class="compact-footer">
+    <div class="container text-center">
+      <div class="closing-quote-banner">
+        <span class="closing-badge"><i class="fa-solid fa-heart"></i> Remember This</span>
+        <h2 class="closing-heading">A Degree Is What You Studied.<br><span class="highlight-under">It Is Not Who You Are.</span></h2>
+        <p class="closing-statement">
+          No automated algorithm possesses the authority to measure your intellect, your kindness, or your eventual destiny. The economic cycle will recover, corporate freezes will thaw, but your existence is irreplaceable.
+        </p>
+      </div>
+      <p class="colophon-text">The Merit Mirage • An initiative uncovering the human reality of student pressure and higher education.</p>
+    </div>
+  </footer>
+
+  <!-- Modal Component for Reading Letters -->
+  <div class="modal-dimmer" id="letter-modal">
+    <div class="modal-dialog">
+      <button class="modal-dismiss" id="modal-close">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
